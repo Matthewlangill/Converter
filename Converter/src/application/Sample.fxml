@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Distance">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="comboVol1" layoutX="64.0" layoutY="137.0" onAction="#ConvertVol1" prefWidth="150.0" />
+                        <ComboBox fx:id="comboVol2" layoutX="336.0" layoutY="137.0" onAction="#ConvertVol2" prefWidth="150.0" />
+                        <TextField fx:id="txtVol1" layoutX="59.0" layoutY="94.0" onKeyReleased="#ConvertVol1" onKeyTyped="#CheckText" />
+                        <TextField fx:id="txtVol2" layoutX="331.0" layoutY="94.0" onKeyReleased="#ConvertVol2" onKeyTyped="#CheckText" />
+                        <Button layoutX="562.0" layoutY="1.0" mnemonicParsing="false" onAction="#Quitter" opacity="0.75" text="Exit" textFill="#f50707" />
+                        <Text fill="#0062ff" layoutX="186.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIT CONVERTER">
+                           <font>
+                              <Font name="PingFang HK Regular" size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="135.0" fitWidth="361.0" layoutX="220.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/360_F_336230982_QXSt4JmjiRsfHUtrq1cHpPAiY2Lx6E2M.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Mass">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="comboMass1" layoutX="67.0" layoutY="120.0" onAction="#ConvertMass1" prefWidth="150.0" />
+                        <ComboBox fx:id="comboMass2" layoutX="337.0" layoutY="120.0" onAction="#ConvertMass2" prefWidth="150.0" />
+                        <TextField fx:id="txtMass1" layoutX="67.0" layoutY="75.0" onKeyReleased="#ConvertMass1" onKeyTyped="#CheckText" />
+                        <TextField fx:id="txtMass2" layoutX="337.0" layoutY="75.0" onKeyReleased="#ConvertMass2" onKeyTyped="#CheckText" />
+                        <Button layoutX="562.0" layoutY="1.0" mnemonicParsing="false" onAction="#Quitter" text="Exit" textFill="#e40606" />
+                        <Text fill="#0062ff" layoutX="195.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIT CONVERTER">
+                           <font>
+                              <Font name="PingFang HK Regular" size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="173.0" fitWidth="200.0" layoutX="194.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/download.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Time">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtTime1" layoutX="88.0" layoutY="95.0" onKeyReleased="#ConvertTime1" onKeyTyped="#CheckText" />
+                        <TextField fx:id="txtTime2" layoutX="324.0" layoutY="95.0" onKeyReleased="#ConvertTime2" onKeyTyped="#CheckText" />
+                        <ComboBox fx:id="comboTime1" layoutX="88.0" layoutY="141.0" onAction="#ConvertTime1" prefWidth="150.0" />
+                        <ComboBox fx:id="comboTime2" layoutX="324.0" layoutY="141.0" onAction="#ConvertTime2" prefWidth="150.0" />
+                        <Button layoutX="562.0" layoutY="1.0" mnemonicParsing="false" onAction="#Quitter" text="Exit" textFill="#e40000" />
+                        <Text fill="#0062ff" layoutX="195.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIT CONVERTER">
+                           <font>
+                              <Font name="PingFang HK Regular" size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="183.0" fitWidth="227.0" layoutX="195.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/images.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
